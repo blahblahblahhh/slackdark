@@ -2388,36 +2388,17 @@
     background: -moz-linear-gradient(center bottom, rgba(129, 31, 133, 0.8) 0, transparent 100%);
   }
 
-  #convo_container ts-conversation ts-message.selected
-  {
-    background: #000;
-  }
+  #convo_container ts-conversation ts-message.selected { background: #222; }
 
-  #convo_container ts-conversation ts-relatives::after
-  {
-    background: rgba(45, 2, 45, 0.7);
-  }
+#convo_container ts-conversation ts-relatives::after { background: #545454; }
 
-  #convo_container ts-conversation ts-relatives ts-message.deleted .message_icon i
-  {
-    background-color: rgba(45, 2, 45, 0.7);
-    color: #707;
-  }
+#convo_container ts-conversation ts-relatives ts-message.deleted .message_icon i { background-color: #545454; color: #949494; }
 
-  #convo_container ts-conversation ts-relatives ts-message.deleted .message_content
-  {
-    color: #bfb;
-  }
+#convo_container ts-conversation ts-relatives ts-message.deleted .message_content { color: #e6e6e6; }
 
-  #convo_container ts-conversation ts-relatives ts-message:not(.selected):not(.highlight):not(.delete_mode)
-  {
-    background-color: #000;
-  }
+#convo_container ts-conversation ts-relatives ts-message:not(.selected):not(.highlight):not(.delete_mode) { background-color: #222; }
 
-  #convo_container ts-conversation ts-relatives ts-message:not(.selected):not(.highlight):not(.delete_mode).new
-  {
-    background-color: #34363c;
-  }
+#convo_container ts-conversation ts-relatives ts-message:not(.selected):not(.highlight):not(.delete_mode).new { background-color: #2f2f2f; }
 
   #msgs_div .unread_divider hr
   {
@@ -2438,6 +2419,7 @@
   #msgs_div .unread_divider.no_unreads .divider_label
   {
     color: #707;
+      background: #000;
   }
 
   #msgs_div ts-message.automated_grey
@@ -6989,6 +6971,10 @@ table tr:first-child th:not(:only-of-type)
 .message_cell.disabled
 {
   color: #707;
+}
+
+#message_container {
+  background: #000;
 }
 
 #message_container #msg_limit
